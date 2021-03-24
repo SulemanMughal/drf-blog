@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'dj_rest_auth', # new
     'dj_rest_auth.registration',
+    'drf_yasg',
     # Local
     # 'posts', # new
     # Local
@@ -153,7 +154,7 @@ REST_FRAMEWORK = {
 
 
 # Mail Setting
-EMAIL_BACKEND  = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND  = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'xxxx@gmail.com'
 EMAIL_HOST_PASSWORD = 'xxxxxx'
